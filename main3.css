@@ -1,0 +1,324 @@
+#third {
+  height: 380px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+#third figure {
+  background: #ffffff;
+  /* position: relative;*/
+}
+
+figure {
+  width: 303px;
+  height: 100%;
+  /* background: #ffffff;*/
+  margin: 0;
+  position: relative;
+}
+
+#third figure > img {
+  width: 303px;
+  height: 191px;
+}
+
+/*#third >*/
+figure::before {
+  content: "";
+  position: absolute;
+  margin-left: 66%;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 52px; /* размер и форма */
+  border-color: #f26c4f #f26c4f transparent transparent;
+}
+
+/*#third > */
+figure::after {
+  content: "+";
+  float: right;
+  background: transparent;
+  color: #ffffff;
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  z-index: 2;
+  font-size: 32px;
+}
+
+#third figure > figcaption {
+  color: #4f4f4f;
+}
+
+figure > figcaption {
+  margin-left: 15%;
+  margin-right: 17%;
+  font-family: ArialMT, MyriadPro;
+}
+
+.fig_main3::after {
+  content: "We've made some small changes to BlazRobar.com...";
+  color: #646464;
+  font-size: 12px;
+}
+
+#fourth {
+  /*  height: 380px;*/
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  font-family: ArialMT, MyriadPro;
+  color: #474747;
+}
+
+.left_col {
+  /* width: 628px;*/
+  display: flex;
+  flex-direction: column;
+  margin-right: 19px;
+}
+
+/*.left_col > */
+article,
+.left_col_down {
+  background: #ffffff;
+}
+.left_col > article {
+  border-left: 4px solid #f26c4f;
+  position: relative;
+  padding: 15px 58px 15px 32px;
+  margin-top: 12px;
+}
+
+.left_col > article:hover::before {
+  content: url(./assets/movie_tape.svg);
+  position: absolute;
+  top: 40%;
+  left: -7%;
+  width: 32px;
+  height: 26px;
+}
+.left_col > article:hover {
+  background: #f26c4f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.left_col > article > h3,
+h5 {
+  margin-bottom: 0px;
+}
+
+.left_col > article > h5 {
+  margin-top: 10px;
+}
+
+.left_col > article:nth-of-type(n + 4) {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 8px;
+}
+
+.left_col_list {
+  padding: 0;
+  list-style-type: none; /*убирает маркер/нумерацию*/
+  color: #8f8f8f;
+  display: flex;
+  font-family: Tahoma, MyriadPro;
+  font-size: 10px;
+}
+
+.left_col_list > li {
+  display: inline-block; /*отображает список в ряд*/
+  border-left: 1px solid #8f8f8f;
+  height: 14px;
+  padding-left: 4%;
+}
+
+.left_col_list > li:first-of-type,
+.left_col_list > li:last-of-type {
+  /*.left_col_list > li:first-of-type+li:last-of-type        не срабатывает*/
+  border-left: none;
+  padding-left: 0;
+}
+
+.star_4x {
+  width: 53px;
+  height: 100%;
+  background-image: url(./assets/star.svg);
+  background-repeat: repeat-x;
+  margin-right: 10px;
+}
+
+.star_3x {
+  width: 45px;
+  height: 100%;
+  background-image: url(./assets/star.svg);
+  background-repeat: repeat-x;
+  margin-right: 10px;
+}
+
+.left_col_list > li:nth-of-type(3)::after {
+  content: none;
+}
+
+.name_p {
+  color: #707070;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.left_col_down1 {
+  background-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 18px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #bdbdbd;
+}
+.left_col_down {
+  color: #707070;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 11px 57px 20px 63px;
+  margin-top: 15px;
+}
+.left_col_down > .bold {
+  font-weight: bold;
+}
+.b_left_col {
+  color: #f26c4f;
+}
+
+.bottom {
+  width: 100%;
+  background-color: #efefef;
+  color: #a2a2a2;
+  font-size: 12px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.heart::after {
+  content: url(./assets/heart.svg);
+}
+
+.left_col_down2 {
+  margin-top: 12px;
+  padding: 0;
+  background-color: #ffffff;
+}
+.left_col_down2 > img {
+  width: 100%;
+  height: 306px;
+}
+
+.right_col {
+  margin-top: 15px;
+  width: 303px;
+}
+#fourth figure {
+  background: #373737;
+  color: #ffffff;
+  height: 530px;
+}
+#fourth figure > img {
+  width: 100%;
+  height: 270px;
+}
+.fig_main4 {
+  line-height: 120%;
+}
+.fig_main4::after {
+  content: "Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit. Proin vel nisl in orci venenatis suscipit eget sed lectus.";
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.right_col_down {
+  background-color: transparent;
+  padding-left: 24px;
+  padding-right: 15px;
+  line-height: 140%;
+}
+
+.right_col_down p,
+.right_col_down a {
+  color: #a7a7a7;
+  font-size: 12px;
+}
+
+.right_col_down p::before {
+  content: "Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum...";
+}
+
+.right_col_down hr {
+  margin-top: 12px;
+  height: 10px;
+  border: none;
+  border-top: 1px solid #a7a7a7;
+  box-shadow: 0 10px 10px -10px #ffffff inset;
+  opacity: 0.3;
+}
+
+.right_col > article {
+  border-left: 3px solid #cacaca;
+  margin-top: 8px;
+}
+
+.right_col > article:hover {
+  border-bottom: 1px solid #cacaca;
+  box-shadow: 0px 15px 10px -15px #cacaca;
+  cursor: pointer;
+}
+
+.right_col > article > h5 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.right_col > article:nth-of-type(1) {
+  margin-top: 20px;
+}
+
+article:nth-of-type(4) > h5 {
+  font-weight: normal;
+}
+.b_right_col {
+  color: #a7a7a7;
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: #373737;
+  padding: 20px 0px 20px 215px;
+}
+
+.footer_list {
+  list-style-type: none;
+  cursor: pointer;
+  padding-left: 0;
+}
+.footer_list > li {
+  display: inline-block;
+  color: #ffff;
+  font-size: 12px;
+  font-family: ArialMT;
+  padding-right: 10px;
+}
+footer > p {
+  color: #7e7e7e;
+  font-size: 11px;
+}
