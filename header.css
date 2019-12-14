@@ -28,17 +28,29 @@ header {
   display: flex;
 }
 
-#head2 {
-  background: #474747;
-  height: 70px;
+#head1 div,#head2 div  {
+position: relative;
+width: 950px;
+margin: 0 auto;
+display:inline-flex;
+flex-direction: row;
+justify-content: flex-start;
 }
 
+
 #head1 nav {
-  margin-left: 215px;
   width: 81px;
   height: 100%;
-  display: block;
   background-color: #f26c4f;
+}
+#head1 nav::after {
+content:"g";
+position: absolute;
+font-family: "NexaB";
+  cursor: default;
+  font-size: 35px;
+  top: 8%;
+  left: 3%;
 }
 
 .g {
@@ -47,14 +59,6 @@ header {
   height: 100%;
 }
 
-.g_fig {
-  position: absolute;
-  font-size: 35px;
-  margin-top: -70px;
-  margin-left: 30px;
-  font-family: "NexaB";
-  cursor: default;
-}
 .g_good {
   text-align: left;
   margin: 20px 0 0 29px;
@@ -62,27 +66,32 @@ header {
   font-family: "Nexal";
 }
 
+#head2 {
+  display:flex;
+  background: #474747;
+  height: 70px;
+  align-items: center;
+}
+
 #head2 ul {
   list-style-type: none; /*убирает маркер/нумерацию*/
-  margin: 0 0 0 190px;
-  width: 420px;
-  height: 100%;
-  display: flex;
+  padding:0;
+  width: 50%;
 }
 @font-face {
   font-family: ArialMT;
   src: url(./AriaMT/02587_ARIALMT.ttf);
 }
+
 .top_list li {
-  padding-top: 7%;
   display: inline-block; /*отображает список в ряд*/
-  flex: 1;
   text-transform: capitalize; /*делает заглавную первую букву*/
   text-align: center;
   font-family: ArialMT;
   font-size: 12px;
-  height: 59%;
   cursor: pointer;
+  padding-left: 5%;
+ 
 }
 
 .top_list li::after {

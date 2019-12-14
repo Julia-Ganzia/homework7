@@ -93,19 +93,7 @@ article,
   margin-top: 12px;
 }
 
-.left_col > article:hover::before {
-  content: url(./assets/movie_tape.svg);
-  position: absolute;
-  top: 40%;
-  left: -7%;
-  width: 32px;
-  height: 26px;
-}
-.left_col > article:hover {
-  background: #f26c4f;
-  color: #ffffff;
-  cursor: pointer;
-}
+
 
 .left_col > article > h3,
 h5 {
@@ -123,7 +111,7 @@ h5 {
 }
 
 .left_col_list {
-  padding: 0;
+ padding: 0;
   list-style-type: none; /*убирает маркер/нумерацию*/
   color: #8f8f8f;
   display: flex;
@@ -135,7 +123,8 @@ h5 {
   display: inline-block; /*отображает список в ряд*/
   border-left: 1px solid #8f8f8f;
   height: 14px;
-  padding-left: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .left_col_list > li:first-of-type,
@@ -169,6 +158,31 @@ h5 {
   color: #707070;
   font-size: 13px;
   line-height: 20px;
+}
+
+.left_col > article:hover::before {
+  content: url(./assets/movie_tape.svg);
+  position: absolute;
+  top: 40%;
+  left: -7%;
+  width: 32px;
+  height: 26px;
+}
+.left_col > article:hover,
+.left_col >article:hover>p,
+.left_col >article:hover>ul
+ {
+  background: #f26c4f;
+  color: #ffffff;
+  cursor: pointer;
+}
+.left_col > article:hover>ul>li{
+  border-left-color:#ffffff;
+}
+.left_col > article:hover>ul>li>.star_3x,
+.left_col > article:hover>ul>li>.star_4x {
+  background-image: url(./assets/whitestar.svg);
+ 
 }
 
 .left_col_down1 {
@@ -206,7 +220,12 @@ h5 {
   line-height: 42px;
   padding-left: 30px;
   padding-right: 30px;
+  
 }
+.bottom>span{
+  border-bottom:none;
+}
+
 .heart::after {
   content: url(./assets/heart.svg);
 }
@@ -291,7 +310,7 @@ h5 {
   margin-top: 20px;
 }
 
-article:nth-of-type(4) > h5 {
+.for4   {
   font-weight: normal;
 }
 .b_right_col {
@@ -303,7 +322,13 @@ article:nth-of-type(4) > h5 {
 
 footer {
   background-color: #373737;
-  padding: 20px 0px 20px 215px;
+ /** padding: 20px 0px 20px 15%;*/
+}
+footer>div{
+  position: relative;
+  width: 950px;
+  margin: 0 auto;
+  padding: 20px 0px;
 }
 
 .footer_list {
@@ -318,7 +343,8 @@ footer {
   font-family: ArialMT;
   padding-right: 10px;
 }
-footer > p {
+footer>div > p {
   color: #7e7e7e;
   font-size: 11px;
+  line-height: 20px;
 }
